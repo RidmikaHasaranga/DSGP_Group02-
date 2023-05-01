@@ -15,7 +15,7 @@ app = Flask(__name__)
 CORS(app)
 
 #Load the ML models
-crop_recommendation_model_path = 'crop_pred_new_model.pkl'
+crop_recommendation_model_path = 'main.pkl'
 crop_recommendation_model = pickle.load(
     open(crop_recommendation_model_path, 'rb'))
 
